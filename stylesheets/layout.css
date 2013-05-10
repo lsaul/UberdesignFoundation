@@ -1,0 +1,199 @@
+/* Artfully masterminded with the help of ZURB  */
+
+/* -------------------------------------------------- 
+   Table of Contents
+-----------------------------------------------------
+:: Body
+:: Navigation
+:: Typography
+:: Content
+:::: About
+:::: Contact
+:::: Services
+:: Lastband/Footer
+:: Misc. 
+*/
+
+
+/* -----------------------------------------
+   Body
+----------------------------------------- */
+
+body{
+  background: #F7F7F7;
+	font-family: Verdana, "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
+	 
+}
+
+/* -----------------------------------------
+   Typography
+----------------------------------------- */
+h1,h2,h3,h4,h5,h6{font-family: Verdana, "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;font-weight:normal;}
+
+
+/* -----------------------------------------
+   Navigation
+----------------------------------------- */
+#navbar{
+background-color: #F0F0F0;
+border-bottom: 2px solid #dc3522;
+margin-bottom: 0;
+padding: 15px 0 35px 0;
+position: fixed;
+top: 0;
+left: 0;
+width:100%;
+z-index: 1000;
+-webkit-box-shadow: 0 1px 10px rgba(0, 0, 0, .1);
+-moz-box-shadow: 0 1px 10px rgba(0,0,0,.1);
+box-shadow: 0 1px 10px rgba(0, 0, 0, .1);
+}
+
+/*--Makes nav logo responsive--*/
+#nav img{margin:0;max-width:100%;height:auto;padding:0;}
+.top-bar ul > li a:not(.button){padding:0;}
+
+/*--navigation links styling--*/
+#navbar .top-bar{background-color:transparent;height:auto;margin-top:-15px;}
+#navbar .top-bar li, li:hover, li:active, li:focus, li:visited{background-color:transparent;}
+
+.top-bar #nav-links li a:hover{background-color: transparent;border-top: 5px solid #1f1f1f;color:#5e5e5e;}
+
+
+#navbar #nav-links li a.at{border-top:5px solid #228bdc;}
+
+#navbar #nav-links li a:active{border-top:5px solid #dc3522;}
+
+#nav-links{position:absolute;}
+
+.top-bar #nav-links li a{color: black;border:5px solid #f0f0f0;font-size: 16px;font-family: Verdana, "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;padding: 0 5px;}
+
+
+/*--Style drop-down navigation on mobile and small screens--*/
+/* default style - dropdown nav doesn't appear on standard desktops and laptops */
+.selectnav { display: none; }
+
+/* small screen */
+@media screen and (max-width: 900px) {
+  .js #nav-links { display: none; }
+  .js .selectnav { display: block; }
+  
+  #navbar{padding:20px 0 20px 0;}
+  .selectnav { display: inline-block; }
+
+  #selectnav1{color:white;background:#1f1f1f;border:1px solid #9c9c9c;margin: 5px 0 0 40px;width:200px;}
+
+  #nav img{margin-top:-10px;}
+ }
+
+@media screen and (max-width: 768px) {
+  #navbar{padding:20px 0 10px 0;}
+
+  #selectnav1{color:white;background:#1f1f1f;border:1px solid #9c9c9c;margin: 20px 0 0 15px;width:200px;}
+}
+
+/*--Fixes minor nav selector spacing issue on smaller screens--*/
+@media screen and (max-width: 400px){
+	#selectnav1{margin:15px 0 0 15px;}
+}
+
+
+/* ----------------------------------------- 
+   Content
+----------------------------------------- */
+/* -----------------------------------------
+   Content - About
+----------------------------------------- */
+#firstBand{
+	padding-top:70px;
+	position:relative;
+}
+
+#about h4{margin-top: 0;}
+#contact h4{margin-top: 0;}
+
+#llImg{
+	background-image: ('');
+}
+
+
+@media screen and (max-width: 768px) {
+	
+	#about{
+		padding-top:80px;
+		position:relative;
+	}
+
+}
+
+/* -----------------------------------------
+   Contact
+----------------------------------------- */
+.icons{
+  list-style-type: none;
+}
+
+.icons li{
+  float: left;
+  margin:0 15px 0 0;
+}
+
+#contactform table{border: 1px solid #228bdc;width:100%;}
+table tbody tr:nth-child(even) {
+background: #f7f7f7;
+}
+
+#contactform input{margin: 0;}
+#contactform textarea{margin: 0;resize: none;}
+
+#send{
+  background-image: url('../images/sub-button.png');
+  background-position: 0 -68px;
+  border: none;
+  height: 34px;
+  position: relative;
+  width: 126px;
+  text-indent: -9999px
+}
+
+#send:hover{
+   background-position:0 -34px; 
+}
+
+#send:active{
+   background-position: 0 0;
+}
+
+/* -----------------------------------------
+   Services
+----------------------------------------- */
+h4.noTop{margin-top: 0;}
+
+/* -----------------------------------------
+   Lastband/Footer
+----------------------------------------- */
+.lastband{background-color: #F0F0F0;}
+
+
+/* -----------------------------------------
+   Misc.
+----------------------------------------- */
+.box-shadow {
+  -moz-box-shadow: 1px 1px 2px 1px #444;
+  -webkit-box-shadow: 1px 1px 2px 1px #444;
+  box-shadow: 1px 1px 2px 1px #444;
+  -ms-filter: "progid:DXImageTransform.Microsoft.Shadow(Strength=4, Direction=135, Color='#444444')";
+  filter: progid:DXImageTransform.Microsoft.Shadow(Strength=2, Direction=0, Color='#444444');
+}
+
+.lgtBorder{border: 1px solid #228bdc;}
+
+hr.style-two {
+    border: 0;
+    height: 1px;
+    background-image: -webkit-linear-gradient(left, rgba(0,0,0,0), rgba(0,0,0,0.25), rgba(0,0,0,0)); 
+    background-image:    -moz-linear-gradient(left, rgba(0,0,0,0), rgba(0,0,0,0.25), rgba(0,0,0,0)); 
+    background-image:     -ms-linear-gradient(left, rgba(0,0,0,0), rgba(0,0,0,0.25), rgba(0,0,0,0)); 
+    background-image:      -o-linear-gradient(left, rgba(0,0,0,0), rgba(0,0,0,0.25), rgba(0,0,0,0)); 
+}
+ 
